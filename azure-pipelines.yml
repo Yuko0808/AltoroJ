@@ -13,6 +13,12 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
+- task: HCLAppScanOnCloud@2
+  inputs:
+    AppSecTestService: 'Yuko test'
+    applications: '3caa69a7-2e04-4949-ad83-6f6cd940d2da'
+    scantype: 'static'
+    scanMethod: 'IRX'
 
 steps:
 - script: echo Hello, world!
