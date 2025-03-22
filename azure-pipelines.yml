@@ -3,6 +3,16 @@
   inputs:
     AppSecTestService: 'Yuko test'
     applications: '3caa69a7-2e04-4949-ad83-6f6cd940d2da'
+    scantype: 'static'
+    scanMethod: 'IRX'
+    ScanSpeedOptions: 'thorough'
+- task: HCLAppScanOnCloud@2
+  inputs:
+    AppSecTestService: 'Yuko test'
+- task: HCLAppScanOnCloud@2
+  inputs:
+    AppSecTestService: 'Yuko test'
+    applications: '3caa69a7-2e04-4949-ad83-6f6cd940d2da'
     scantype: 'sca'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
